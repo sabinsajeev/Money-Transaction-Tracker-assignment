@@ -1,0 +1,64 @@
+{
+  "user_data": [
+    {
+      "id": 1,
+      "name": "sabin",
+      "userid": "sasa",
+      "password": "ss123",
+      "email": "sasa@gmail.com",
+      "phone": 8084541256,
+      "gender": "male",
+      "age": 25,
+      "city": "tvm",
+      "state": "kerala",
+      "pincode": 691574,
+      "country": "india"
+    },
+    {
+      "name": "SUBIN  SAJEEV",
+      "userid": "s1234",
+      "password": "1234",
+      "email": "sabinsajeevphd@gmail.com",
+      "phone": "4582454185",
+      "gender": "Male",
+      "age": "18",
+      "city": "THIRUVANANTHAPURAM",
+      "state": "Kerala",
+      "pincode": "691574",
+      "country": "ind",
+      "id": 2
+    }
+  ],
+  "transactions": [
+    {
+      "id": 1,
+      "transactionid": 1125,
+      "fromuser": "sabin",
+      "touser": "sajeev",
+      "transaction_amount": 40000,
+      "transaction_date": "19/08/2022",
+      "transaction_time": "22:25",
+      "transacation_status": "success"
+    },
+    {
+      "transactionid": "1234567",
+      "fromuser": "ss",
+      "touser": "bb",
+      "transaction_amount": "250",
+      "transaction_date": "19/08/2002",
+      "transaction_time": "10:35",
+      "transacation_status": "success",
+      "id": 2
+    },
+    {
+      "transactionid": "5894",
+      "fromuser": "dfr",
+      "touser": "dfrfr",
+      "transaction_amount": "8888",
+      "transaction_date": "22/05/2022",
+      "transaction_time": "18:55",
+      "transacation_status": "failed",
+      "id": 3
+    }
+  ]
+}

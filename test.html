@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    type="text/css"
+    href="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/css/jquery.dataTables.css"/>
+    <title>User List</title>
+</head>
+<!-- <script>
+
+        fetch("http://localhost:3000/user_data", {
+            method:"GET",
+            headers:{
+                'Content-Type':'application/json'
+            }
+
+        }).then(response=>response.json())
+    .then(response=>{
+        console.log(response);
+            var tab=`<tr>`;
+        for(let d of response){
+            
+            tab=tab+`
+                    <td>${d.id}</td>
+                    <td>${d.name}</td>
+                    <td>${d.userid}</td>
+                    <td>${d.password}</td>
+                    <td>${d.email}</td>
+                    <td>${d.phone}</td>
+                    <td>${d.gender}</td>
+                    <td>${d.age}</td>
+                    <td>${d.city}</td>
+                    <td>${d.state}</td>
+                    <td>${d.pincode}</td>
+                    <td>${d.country}</td>
+                    </tr>`;
+                    
+        };
+            // tab=tab+`</tbody>`;
+        document.getElementById("user_list").innerHTML=tab;
+    });
+    
+</script> -->
+<body>
+    <h2>User List</h2>
+
+
+    <table id="table_id">
+        <thead>
+            <tr>
+            <th>No:</th>
+            <th>Name:</th>
+            <th>User Id:</th>
+            <th>Password:</th>
+            <th>Email:</th>
+            <th>Phone:</th>
+            <th>Gender:</th>
+            <th>Age:</th>
+            <th>City:</th>
+            <th>State:</th>
+            <th>Pincode:</th>
+            <th>Country:</th>
+            </tr>
+            </thead>
+            <tbody id="user_list">
+            </tbody>
+
+    </table>
+    <script
+type="text/javascript"
+charset="utf8"
+src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.2.min.js"
+></script>
+<script
+type="text/javascript"
+charset="utf8"
+src="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/jquery.dataTables.min.js"></script>
+<script>
+
+    /*Array Binding*/
+    var array = [
+                [
+                    "Ram",
+                    "21",
+                    "Male",
+                    "Doctor"
+                ],
+                [
+                    "Mohan",
+                    "32",
+                    "Male",
+                    "Teacher"
+                ],
+                [
+                    "Rani",
+                    "42",
+                    "Female",
+                    "Nurse"
+                ],
+                [
+                    "Johan",
+                    "23",
+                    "Female",
+                    "Software Engineer"
+                ],
+                [
+                    "Shajia",
+                    "39",
+                    "Female",
+                    "Farmer"
+                ]
+    ];
+
+    $('#table_id').DataTable({
+        data: array,
+        "pageLength": 3
+    });
+
+
+</script>
+
+   
+</body>
+</html>
